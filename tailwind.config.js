@@ -1,16 +1,24 @@
-import type { Config } from 'tailwindcss'
-
+/** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  mode: "jit",
+  darkMode: "class",
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
         primary: "#6359c9",
         secondary: "#64cff6",
-        background: "#141332",
+        darkbg: "#141332",
+        darkbg2: "#1d1d41",
+        lightbg: "#ccc",
+        lightbg2: "#92b1d3",
         success: "#02b154",
         danger: "#e41414",
-        text: "fff"
+        darktext: "#fff",
+        lighttext: "#141332"
       },
       fontFamily: {
         primary: ["General Sans", "sans-serif"],
@@ -28,5 +36,5 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config
+}
 

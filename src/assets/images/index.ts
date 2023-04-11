@@ -8,9 +8,11 @@ import security from './security.svg'
 import settings from './settings.svg'
 import profile from './profile.svg'
 import help from './help.svg'
+import avater from './avater.svg'
+import dropdown from './dropdown.svg'
 
 
- const image = { dashboard,accounts,wallet,analysis,mode,security,settings,profile,help }
+ const image = { dashboard,accounts,wallet,analysis,mode,security,settings,profile,help,avater,dropdown }
 
 
  export default image

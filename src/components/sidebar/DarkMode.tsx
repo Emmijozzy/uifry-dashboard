@@ -1,54 +1,16 @@
-import React, { useEffect, useState }  from 'react'
-import image from '../../assets/images'
+import React, { useEffect, useState }  from 'react';
+import image from '../../assets/images';
+import useDarkmode from '../../hooks/useDarkmode';
 
-const { mode } = image
+const { mode } = image;
 
 type Props = { }
 
 const DarkMode = (props: Props) => {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : ''
-  );
-  const element = document.documentElement;
-  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    
-  const handleClick = (e: any) => {
-    setTheme((preTheme) => (preTheme === 'dark' ? 'light' : 'dark'))
-  }
+  const { theme, handleModeClick, changeWithSystem, UpdateMode} = useDarkmode();
   
-  const checkMatch = () => {
-    darkQuery.matches ? setTheme('dark'): setTheme('light')
-  }
-  
-
-  useEffect(() => {
-    switch (theme) {
-      case 'dark':
-        element.classList.add('dark')
-        localStorage.setItem("theme", 'dark')
-        break;
-      case 'light':
-        element.classList.remove('dark')
-        localStorage.setItem("theme", "light")
-        break;   
-      default:
-        checkMatch()   
-        break;
-    }
-  }, [theme])
-
-  darkQuery.addEventListener('change', (e) => {
-    if(!("theme" in localStorage)) {
-      if(e.matches) {
-        element.classList.add('dark');
-      } else {
-        element.classList.remove("dark")
-      }
-    }
-  })
-  
-  
-  
+  UpdateMode()
+  changeWithSystem()
 
   return (
     <div className='h-[50px] my-2 w-[250px] flex'>
@@ -60,7 +22,7 @@ const DarkMode = (props: Props) => {
             <span className='basis-auto'>{'Dark Mode'}</span>
           </div>
           <label className="basis-auto theme-switch" htmlFor="checkbox">
-            <input type="checkbox" id="checkbox"onClick={handleClick} checked={theme == 'dark'} />
+            <input type="checkbox" id="checkbox"onClick={handleModeClick} checked={theme == 'dark'} />
             <div className="slider round"></div>
           </label>
         </div>

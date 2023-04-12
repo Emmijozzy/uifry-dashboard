@@ -1,18 +1,20 @@
-import React from 'react'
-import Logo from './Logo'
+import React, { useContext } from 'react'
+import Logo from '../general/Logo'
 import NavItem from './NavItem'
 import DarkMode from './DarkMode'
 import User from './User'
 import { navItems } from '../../constant/navItem'
 import { globalNavItem } from '../../constant/globalNavItem'
+import { AppContext } from '../../context/ContextProvide'
 
 type Props = {}
 
 const Sidebar = (props: Props) => {
+  const { nav } = useContext(AppContext)
   return (
-    <aside className='w-[280px] h-full dark:bg-darkbg2 bg-lightbg2 overflow-y-auto overflow-x-anto z-10 px-[16px]'>
+    <aside className={`min-w-[280px] h-full dark:bg-darkbg2 bg-lightbg2 overflow-y-auto overflow-x-anto z-10 px-[16px] absolute lg:relative sidebar ${nav !==  true ? 'sidebar--show' : 'sidebar--close'}`}>
       <nav className='flex flex-col w-full h-full font-tertiary'>
-        <div className='w-full basis-20'>
+        <div className='w-full basis-20 mt-4'>
           <Logo />
         </div>
         <ul className='flex-auto w-full mt-4'>
@@ -39,7 +41,7 @@ const Sidebar = (props: Props) => {
           ))}
           <li><DarkMode /></li>
         </ul>
-        <div className='basis-24'>
+        <div className='basis-24 mt-4'>
           <User />
         </div>
       </nav>

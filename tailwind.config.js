@@ -18,6 +18,7 @@ export default {
         success: "#02b154",
         danger: "#e41414",
         darktext: "#fff",
+        darktext2: "#A6A6A6",
         lighttext: "#141332"
       },
       fontFamily: {
@@ -26,14 +27,12 @@ export default {
         tertiary: ["SF-Pro", "sans-serif"],
       },
     },
-    screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
-    },
+    // screens: {
+    //   sm: "380px",
+    //   md: "1060px",
+    //   lg: "1200px",
+    //   xl: "1700px",
+    // },
   },
   plugins: [],
 }

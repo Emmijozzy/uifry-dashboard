@@ -13,7 +13,7 @@ const DarkMode = (props: Props) => {
   changeWithSystem()
 
   return (
-    <div className='h-[50px] my-2 w-[250px] flex'>
+    <div className='h-[50px] my-2 w-full flex '>
         <div
             className='flex w-full space-x-8'
         >

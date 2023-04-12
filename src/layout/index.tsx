@@ -8,10 +8,12 @@ type Props = {}
 const Layout = (props: Props) => {
   return (
     <section className='w-full h-full '>
-      <div className="w-full h-full flex relative">
-        <TopNavbar />
+      <div className="relative flex w-full h-full /">
         <Sidebar />
-        <Outlet />
+        <div className='w-full p-[26px]'>
+          <TopNavbar />
+          <Outlet />
+        </div>
       </div>
     </section>
   )

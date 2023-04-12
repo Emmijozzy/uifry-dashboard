@@ -85,3 +85,7 @@ input:checked + .slider:before {
   transition: all 0.10s ease-out;
 }
 
+.dashboard_layout {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+}

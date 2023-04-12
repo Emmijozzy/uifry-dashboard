@@ -2,9 +2,6 @@
 	"folders": [
 		{
 			"path": ".."
-		},
-		{
-			"path": "../../lendsqr/lendsqr-fe-test"
 		}
 	],
 	"settings": {}

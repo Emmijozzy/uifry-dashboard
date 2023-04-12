@@ -12,7 +12,7 @@ type Props = {}
 const Sidebar = (props: Props) => {
   const { nav } = useContext(AppContext)
   return (
-    <aside className={`min-w-[280px] h-full dark:bg-darkbg2 bg-lightbg2 overflow-y-auto overflow-x-anto z-10 px-[16px] absolute lg:relative sidebar ${nav !==  true ? 'sidebar--show' : 'sidebar--close'}`}>
+    <aside className={`min-w-[280px] h-full dark:bg-darkbg2 bg-lightbg2 overflow-y-auto overflow-x-anto z-10 px-[16px] absolute lg:relative sidebar ${nav ===  true ? 'sidebar--show' : 'sidebar--close'}`}>
       <nav className='flex flex-col w-full h-full font-tertiary'>
         <div className='w-full basis-20 mt-4'>
           <Logo />

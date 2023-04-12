@@ -17,7 +17,7 @@ const TopNave = (props: Props) => {
         <Logo />
         <div className='w-8 h-8' onClick={handleNav}>
           {
-           nav === true ? <FiMenu className='w-full h-full' /> : <MdClose className='w-full h-full'/>
+           nav === true ? <MdClose className='w-full h-full'/> : <FiMenu className='w-full h-full' /> 
           }
         </div>
       </div>

@@ -19,7 +19,8 @@ export default {
         danger: "#e41414",
         darktext: "#fff",
         darktext2: "#A6A6A6",
-        lighttext: "#141332"
+        lighttext: "#141332",
+        lighttext2: "#213b62"
       },
       fontFamily: {
         primary: ["General Sans", "sans-serif"],
@@ -35,5 +36,8 @@ export default {
     // },
   },
   plugins: [],
+  corePlugins: {
+    placeholdColor: true
+  }
 }
 

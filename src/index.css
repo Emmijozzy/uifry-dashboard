@@ -84,3 +84,4 @@ input:checked + .slider:before {
 .dark {
   transition: all 0.10s ease-out;
 }
+

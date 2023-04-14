@@ -11,9 +11,11 @@ import help from './help.svg'
 import avater from './avater.svg'
 import dropdown from './dropdown.svg'
 import hand from './waving-hand.svg'
+import arrowUp from './arrow-up.svg'
+import arrowDown from './arrow-down.svg'
 
 
- const image = { dashboard,accounts,wallet,analysis,mode,security,settings,profile,help,avater,dropdown,hand }
+ const image = { dashboard,accounts,wallet,analysis,mode,security,settings,profile,help,avater,dropdown,hand,arrowDown,arrowUp }
 
 
  export default image

@@ -1,11 +1,43 @@
 import React from 'react'
+import Income from './income'
+import Outcome from './Outcome'
+import PercentDecrease from './PercentDecrease'
+import PercentIncrese from './PercentIncrese'
 
-type Props = {}
+type Props = {
+  title: string
+  post: string
+  state: string
+  amount: string
+  percenIncrese: string
+}
 
-const card = (props: Props) => {
+const Card = (props: Props) => {
+  const { title, post, state, amount, percenIncrese } = props
   return (
-    <div>card</div>
+    <div className='w-[320px] h-[125px] relative dark:bg-darkbg2 bg-lightbg2 font-primary p-[26px] mr-8 my-[6px] rounded-2xl'>
+      <div className='w-full h-full flex flex-nowrap items-center'>
+        <div className='mr-4'>
+          {
+            post == 'income' ? 
+            <Income /> :
+            <Outcome />         
+          }
+        </div>
+        <div className='w-[70%] flex flex-col justify-between '>
+          <p className='text-lighttext2 dark:text-darktext2 text-lg font-normal '>{title}</p>
+          <h3 className='text-3xl font-semibold'>{`${amount}`}</h3>
+        </div>
+        <div className='basis-10 h-full w-full flex items-end py-2'>
+          {
+            state == 'increase' ?
+            <PercentIncrese /> :
+            <PercentDecrease />
+          }
+        </div>
+      </div>
+    </div>
   )
 }
 
-export default card
+export default Card

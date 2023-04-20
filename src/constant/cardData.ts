@@ -10,7 +10,7 @@ export const cardDatas = [
     title: 'Total Outcome',
     post: 'outcome',
     state: 'decrease',
-    amount: '$632.000',
+    amount: '632.000',
     percenIncrese: '1.29%'
   },
 ]

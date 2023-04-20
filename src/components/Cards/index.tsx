@@ -7,7 +7,7 @@ type Props = {}
 
 const index = (props: Props) => {
   return (
-    <div className=' w-full flex flex-wrap flex-col justify-between md:flex-row'>
+    <div className=' w-full flex flex-wrap flex-col justify-between md:flex-row mb-3'>
       {
         cardDatas.map((cardData, i) => (
           <Card 

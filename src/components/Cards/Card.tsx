@@ -15,7 +15,7 @@ type Props = {
 const Card = (props: Props) => {
   const { title, post, state, amount, percenIncrese } = props
   return (
-    <div className='w-full lg:w-[320px] h-[125px] relative dark:bg-darkbg2 bg-lightbg2 font-primary p-[26px] my-[6px] rounded-2xl'>
+    <div className='w-full lg:w-[320px] h-[125px] relative dark:bg-darkbg2 bg-lightbg2 font-primary p-[26px] my-[6px] mt-0 rounded-2xl'>
       <div className='w-full h-full flex flex-nowrap items-center'>
         <div className='mr-4'>
           {

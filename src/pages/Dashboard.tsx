@@ -15,6 +15,7 @@ const Dashboard = (props: Props) => {
           </div>
           <div>
             <MyCard />
+            
           </div>
         </div>
     </section>

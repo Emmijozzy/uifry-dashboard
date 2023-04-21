@@ -4,7 +4,7 @@ import CardCarousel from './CardCarousel'
 
 type Props = {}
 
-const MyCard = (props: Props) => {
+const ActionCard = (props: Props) => {
   return (
     <div className='dark:bg-darkbg2 bg-lightbg2 w-full h-[400px] rounded-xl'>
         <div className='w-full h-full p-5 flex flex-col space-y-2'>
@@ -19,4 +19,4 @@ const MyCard = (props: Props) => {
   )
 }
 
-export default MyCard
+export default ActionCard

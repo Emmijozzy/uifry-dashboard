@@ -1,7 +1,7 @@
 import React from 'react';
 import Cards from '../components/Cards';
 import DashboardTop from '../components/DashboardTop';
-import MyCard from '../components/MyCard/index';
+import ActionCard from '../components/ActionCard';
 
 type Props = {}
 
@@ -14,7 +14,7 @@ const Dashboard = (props: Props) => {
             <Cards />
           </div>
           <div>
-            <MyCard />
+            <ActionCard />
 
           </div>
         </div>

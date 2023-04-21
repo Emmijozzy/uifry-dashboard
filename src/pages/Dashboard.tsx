@@ -1,7 +1,7 @@
 import React from 'react';
 import Cards from '../components/Cards';
 import DashboardTop from '../components/DashboardTop';
-import MyCard from '../components/MyCard';
+import MyCard from '../components/MyCard/index';
 
 type Props = {}
 

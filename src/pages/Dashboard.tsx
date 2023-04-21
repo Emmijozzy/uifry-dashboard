@@ -1,6 +1,6 @@
 import React from 'react';
 import Cards from '../components/Cards';
-import DashboardTop from '../components/DashboardTop'
+import DashboardTop from '../components/DashboardTop';
 import MyCard from '../components/MyCard';
 
 type Props = {}
@@ -15,7 +15,7 @@ const Dashboard = (props: Props) => {
           </div>
           <div>
             <MyCard />
-            
+
           </div>
         </div>
     </section>

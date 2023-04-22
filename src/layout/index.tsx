@@ -11,7 +11,7 @@ const Layout = (props: Props) => {
       <div className="relative flex w-full h-full  /">
         <TopMobileNav />
         <Sidebar />
-        <div className='w-full p-[26px] pt-0 h-full flex flex-col relative overflow-y-scroll'>
+        <div className='w-full pt-0 h-full flex flex-col relative'>
           <Outlet />
         </div>
       </div>

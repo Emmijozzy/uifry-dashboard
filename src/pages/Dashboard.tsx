@@ -2,7 +2,7 @@ import React from 'react';
 import Cards from '../components/Cards';
 import DashboardTop from '../components/DashboardTop';
 import ActionCard from '../components/ActionCard';
-import Activities from '../components/Activitives';
+import Activity from '../components/Activity';
 
 type Props = {}
 
@@ -16,7 +16,7 @@ const Dashboard = (props: Props) => {
           </div>
           <div className='md:grid md:grid-cols-2 lg:grid-cols-1 gap-5 lg:inline'>
             <ActionCard />
-            <Activities />
+            <Activity />
           </div>
         </div>
     </section>

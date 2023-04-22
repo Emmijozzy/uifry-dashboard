@@ -5,7 +5,7 @@ import ViewAll from './ViewAll'
 
 type Props = {}
 
-const Activities = (props: Props) => {
+const Activity = (props: Props) => {
   return (
     <div className='h-[400px] w-full dark:bg-darkbg2 bg-lightbg2 rounded-xl p-5 basis-1/2' >
         <div className='w-full h-full flex flex-col justify-between'>
@@ -17,4 +17,4 @@ const Activities = (props: Props) => {
   )
 }
 
-export default Activities
+export default Activity

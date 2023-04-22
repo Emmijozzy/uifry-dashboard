@@ -4,7 +4,7 @@ import DashboardTop from '../components/DashboardTop';
 import ActionCard from '../components/ActionCard';
 import Activity from '../components/Activity';
 import Analytics from '../components/Analytics';
-import Transaction from '../components/Transaction';
+import Transaction from '../components/Transacttion';
 
 type Props = {}
 

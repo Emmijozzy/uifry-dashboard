@@ -7,9 +7,9 @@ type Props = {}
 const Transaction = (props: Props) => {
   return (
     <div className='h-[360px] w-full p-5 dark:bg-darkbg2 bg-lightbg2 mb-6 rounded-lg'>
-        <div className='w-full h-full overflow-x-auto overflow-y-hidden'>
-            <TableBody />
+        <div className='w-full h-full overflow-x-auto overflow-y-hidden flex flex-col justify-stretch'>
             <TableHead />
+            <TableBody />
         </div>
     </div>
   )

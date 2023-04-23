@@ -4,7 +4,9 @@ type Props = {}
 
 const TableBody = (props: Props) => {
   return (
-    <div>TableBody</div>
+    <div className='justify-self-stretch'>
+      
+    </div>
   )
 }
 

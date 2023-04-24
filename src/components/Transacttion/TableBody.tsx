@@ -38,7 +38,7 @@ const TableBody = (props: Props) => {
                 <td className='table-cell'>{tableData.Date}</td>
                 <td className='table-cell'>{`$${tableData.amount}`}</td>
                 <td className='table-cell'>
-                  <div className=' w-28 h-6 flex items-center justify-center dark:bg-darksuccessbg bg-lightsuccessbg text-lightsuccess dark:text-darksuccess font-medium text-lg px-3 py-1 rounded-lg'>{tableData.transaction}</div>
+                  <div className=' w-28 h-6 flex items-center justify-center dark:bg-darksuccessbg bg-lightsuccessbg text-lightsuccess dark:text-darksuccess font-medium text-base px-3 py-1 rounded-lg'>{tableData.transaction}</div>
                 </td>
               </tr>
             ))

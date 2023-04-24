@@ -15,7 +15,7 @@ export default {
         darkbg2: "#1d1d41",
         darkdangerbg: "#580909ad",
         lightdangerbg: "#f96161ad",
-        lightbg: "#fff",
+        lightbg: "#eee",
         lightbg2: "#92b1d3",
         darksuccessbg: "#095820ad",
         lightsuccessbg: "#61f98dad",

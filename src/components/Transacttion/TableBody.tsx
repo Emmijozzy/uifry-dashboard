@@ -30,7 +30,7 @@ const TableBody = (props: Props) => {
             tableBody.map((tableData, i)=> (
               <tr className=' table-row'>
                 <td className='flex space-x-2 items-center h-20 '>
-                  <div className='h-10 w-10 flex items-center justify-center bg-white rounded-full'>
+                  <div className='h-10 w-10 flex items-center justify-center border-solid border-2 bordser-white rounded-full'>
                    <img src={tableData.icon} />
                   </div>
                   <p>{tableData.name} </p>
@@ -38,7 +38,7 @@ const TableBody = (props: Props) => {
                 <td className='table-cell'>{tableData.Date}</td>
                 <td className='table-cell'>{`$${tableData.amount}`}</td>
                 <td className='table-cell'>
-                  <div className=' w-28 h-6 flex items-center justify-center dark:bg-darksuccessbg bg-lightsuccessbg text-success font-light text- px-3 py-1 rounded-lg'>{tableData.transaction}</div>
+                  <div className=' w-28 h-6 flex items-center justify-center dark:bg-darksuccessbg bg-lightsuccessbg text-lightsuccess dark:text-darksuccess font-medium text-lg px-3 py-1 rounded-lg'>{tableData.transaction}</div>
                 </td>
               </tr>
             ))

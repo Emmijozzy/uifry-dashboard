@@ -8,7 +8,7 @@ const TableBody = (props: Props) => {
   return (
     <div className='w-full h-full flex-1 overflow-auto'>
       <div className='flex w-full h-full overflow-auto'>
-       <table className='w-full min-w-[40rem] h-full table-fixed border-collapse'>
+       <table className='w-full min-w-[36rem] h-full table-fixed border-collapse'>
         <thead className='h-16 w-full text-lighttext2 text-sm dark:text-darktext2'>
           <tr className=''>
             <th className='text-left pl-3 min-w-[8em] w-52'>
@@ -30,7 +30,7 @@ const TableBody = (props: Props) => {
             tableBody.map((tableData, i)=> (
               <tr className=' table-row'>
                 <td className='flex space-x-2 items-center h-20 '>
-                  <div className='h-10 w-10 flex items-center justify-center bg-slate-400 rounded-full'>
+                  <div className='h-10 w-10 flex items-center justify-center bg-white rounded-full'>
                    <img src={tableData.icon} />
                   </div>
                   <p>{tableData.name} </p>

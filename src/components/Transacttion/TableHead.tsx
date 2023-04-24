@@ -4,7 +4,7 @@ type Props = {}
 
 const TableHead = (props: Props) => {
   return (
-    <div className='w-full h-7 flex justify-between'>
+    <div className='w-full mb-4 flex justify-between  float-none'>
         <h2 className='font-primary font-medium text-xl'>Transaction</h2>
         <div>
             <div className=''>

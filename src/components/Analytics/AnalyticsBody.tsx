@@ -54,7 +54,7 @@ const AnalyticsBody = (props: Props) => {
     });
 
     return (
-      <div className='h-full w-full'>
+      <div className='h-fit w-full py-2'>
         <Bar
          options={options}
           data={data}

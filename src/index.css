@@ -104,3 +104,15 @@ input:checked + .slider:before {
     grid-template-columns: 1fr 30%;
   }
 }
+
+.pcard {
+  /* background-image: url("./assets/images/mastercardbg.svg");
+  background-repeat: no-repeat;
+  background-size: auto; */
+  background: linear-gradient(177.23deg, #9C2CF3 -13.49%, #3A6FF9 109.75%);
+  border-radius: 20px;
+}
+
+.ellipse1 {
+  box-shadow: 0px 1px 6px 5px rgb(0 0 0 / 26%);
+}

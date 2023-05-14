@@ -13,9 +13,11 @@ import dropdown from './dropdown.svg'
 import hand from './waving-hand.svg'
 import arrowUp from './arrow-up.svg'
 import arrowDown from './arrow-down.svg'
+import masterCardLogo from './mastercard_logo.svg'
+import search from './search.svg'
 
 
- const image = { dashboard,accounts,wallet,analysis,mode,security,settings,profile,help,avater,dropdown,hand,arrowDown,arrowUp }
+ const image = { dashboard,accounts,wallet,analysis,mode,security,settings,profile,help,avater,dropdown,hand,arrowDown,arrowUp,masterCardLogo,search }
 
 
  export default image

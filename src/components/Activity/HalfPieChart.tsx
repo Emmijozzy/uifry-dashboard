@@ -12,7 +12,7 @@ import pieData from '../../constant/pieData'
 const HalfPieChart = ({ /* see data tab */ }: any) => {
 
   return(
-    <div className='w-full h-full flex flex-col justify-around'>
+    <div className='w-full h-full flex flex-col justify-around text-darkbg'>
         <div className='w-full h-[230px] relative'>
           <ResponsivePie
             data={pieData}

@@ -1,12 +1,12 @@
  const pieData = [
     {
-      "id": "sale",
+      "id": "none",
     //   "label": "css",
       "value": 100,
       "color": "hsl(180, 40%, 50%)"
     },
     {
-      "id": "none",
+      "id": "sale",
     //   "label": "hac3",
       "value": 140,
       "color": "hsl(0, 0%, 0%)"
